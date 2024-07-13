@@ -1,7 +1,8 @@
 export const gridItems = [
   {
     id: 1,
-    title: 'I prioritize client collaboration, fostering open communication ',
+    title:
+      'Looking for a dedicated developer? Lets collaborate and bring your project to life',
     description: '',
     className: 'lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]',
     imgClassName: 'w-full h-full',
@@ -11,7 +12,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "I'm very flexible with communications",
     description: '',
     className: 'lg:col-span-2 md:col-span-3 md:row-span-2',
     imgClassName: '',
@@ -21,7 +22,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: 'My tech stack',
+    title: 'My coding skills',
     description: 'I constantly try to improve',
     className: 'lg:col-span-2 md:col-span-3 md:row-span-2',
     imgClassName: '',
@@ -52,7 +53,8 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: 'Do you want to start a project together?',
+    title:
+      'Ready to collaborate and bring your project to life? Let s get started together!',
     description: '',
     className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
     imgClassName: '',

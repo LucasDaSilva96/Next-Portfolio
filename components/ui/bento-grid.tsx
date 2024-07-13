@@ -1,5 +1,13 @@
+'use client';
+
 import { cn } from '@/lib/utils';
 import { BackgroundGradientAnimation } from './background-gradient-animation';
+import GridGlobe from './grid-globe';
+import Lottie from 'react-lottie';
+import { useState } from 'react';
+import confetti from '@/data/confetti.json';
+import ShimmerButton from './Shimmer-Button';
+import { MdEmail, MdMarkEmailRead } from 'react-icons/md';
 
 export const BentoGrid = ({
   className,
@@ -41,10 +49,21 @@ export const BentoGridItem = ({
   spareImg?: string;
   titleClassName: string;
 }) => {
+  const [copy, setCopy] = useState(false);
+
+  const handleCopy = () => {
+    console.log('Hello');
+    navigator.clipboard.writeText('dasilvajunior881@gmail.com');
+    setCopy(true);
+    console.log(copy);
+    setTimeout(() => {
+      setCopy(false);
+    }, 3000);
+  };
   return (
     <div
       className={cn(
-        'rounded-3xl relative group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4',
+        'row-span-1 rounded-3xl relative overflow-hidden group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4',
         className
       )}
       style={{
@@ -54,7 +73,7 @@ export const BentoGridItem = ({
       }}
     >
       <div className={`${id === 6 && 'flex justify-center h-full'}`}>
-        <div className='w-full h-full absolute'>
+        <div className='w-full h-full absolute '>
           {img && (
             <img
               src={img}
@@ -68,7 +87,7 @@ export const BentoGridItem = ({
         </div>
 
         <div
-          className={`absolute right-0 -bottom-5 ${
+          className={`absolute right-0 -bottom-5  ${
             id === 5 && 'w-full opacity-80'
           }`}
         >
@@ -100,9 +119,78 @@ export const BentoGridItem = ({
         <div className='font-sans font-extralight text-[#c1c2d3] text-sm z-10 md:text-xs lg:text-base'>
           {description}
         </div>
-        <div className='font-sans font-bold  text-lg lg:text-3xl max-w-96 z-10'>
+        <div
+          className={`font-sans font-bold text-base lg:text-xl max-w-96 z-20 ${
+            id === 2 && 'mt-[-45px]'
+          }`}
+        >
           {title}
         </div>
+
+        {id === 2 && <GridGlobe />}
+
+        {id === 3 && (
+          <div className='w-full h-full'>
+            <div className='-top-4 -left-1 absolute flex w-full items-center flex-wrap gap-2'>
+              <span className='py-2 opacity-80 rounded-lg text-center bg-[#10132E] px-3 text-xs'>
+                Web Development
+              </span>
+              <span className='py-2 opacity-80 rounded-lg text-center bg-[#10132E] px-3 text-xs'>
+                API Integration
+              </span>
+
+              <span className='py-2 opacity-80 rounded-lg text-center bg-[#10132E] px-3 text-xs'>
+                UI/UX Design
+              </span>
+            </div>
+
+            <div className='bottom-1 -left-1 absolute flex w-full items-center flex-wrap gap-2'>
+              <span className='py-2 opacity-80 rounded-lg text-center bg-[#10132E] px-3 text-xs'>
+                Responsive Web Design
+              </span>
+              <span className='py-2 opacity-80 rounded-lg text-center bg-[#10132E] px-3 text-xs'>
+                Version Control
+              </span>
+              <span className='py-2 opacity-80 rounded-lg text-center bg-[#10132E] px-3 text-xs'>
+                HTTP Requests
+              </span>
+            </div>
+          </div>
+        )}
+
+        {id === 6 && (
+          <div className='mt-5 relative'>
+            <div className={`absolute bottom-[55px] w-full h-[200px]`}>
+              <Lottie
+                options={{
+                  loop: copy,
+                  autoplay: copy,
+                  animationData: confetti,
+                  rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid slice',
+                  },
+                }}
+              />
+            </div>
+
+            {copy && (
+              <ShimmerButton
+                title='Email copied'
+                icon={<MdMarkEmailRead />}
+                position='right'
+                onClick={handleCopy}
+              />
+            )}
+            {!copy && (
+              <ShimmerButton
+                title='Copy my email'
+                icon={<MdEmail />}
+                onClick={handleCopy}
+                position='right'
+              />
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
