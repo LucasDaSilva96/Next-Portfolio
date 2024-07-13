@@ -41,7 +41,7 @@ export default function Hero() {
             experiences. Let&apos;s bring your ideas to life!
           </p>
 
-          <a href='#about'>
+          <a href='#projects'>
             <ShimmerButton
               title='Show my work'
               icon={<FaLocationArrow size={14} />}

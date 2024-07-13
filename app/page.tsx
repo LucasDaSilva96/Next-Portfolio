@@ -1,5 +1,6 @@
 import Grid from '@/components/Grid';
 import Hero from '@/components/Hero';
+import Projects from '@/components/Projects';
 import { FloatingNav } from '@/components/ui/floating-navbar';
 import { FaHome, FaLaptopCode } from 'react-icons/fa';
 import { GiSkills } from 'react-icons/gi';
@@ -18,6 +19,7 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
+        <Projects />
       </div>
     </main>
   );

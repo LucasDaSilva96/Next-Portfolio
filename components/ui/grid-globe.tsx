@@ -395,10 +395,10 @@ export default function GridGlobe() {
   ];
 
   return (
-    <div className='flex items-center justify-center absolute -left-5 top-44 lg:top-32 w-full h-full'>
+    <div className='flex items-center justify-center absolute w-full h-full'>
       <div className='max-w-7xl mx-auto w-full relative overflow-hidden h-52 lg:h-96 px-4'>
         <div className='absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40' />
-        <div className='absolute w-full  h-44 lg:h-full z-10'>
+        <div className='absolute w-full h-full z-10'>
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>

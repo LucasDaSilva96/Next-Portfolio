@@ -52,10 +52,8 @@ export const BentoGridItem = ({
   const [copy, setCopy] = useState(false);
 
   const handleCopy = () => {
-    console.log('Hello');
     navigator.clipboard.writeText('dasilvajunior881@gmail.com');
     setCopy(true);
-    console.log(copy);
     setTimeout(() => {
       setCopy(false);
     }, 3000);
@@ -63,7 +61,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        'row-span-1 rounded-3xl relative overflow-hidden group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4',
+        'row-span-1 rounded-3xl relative overflow-hidden group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none  dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4',
         className
       )}
       style={{
@@ -131,7 +129,7 @@ export const BentoGridItem = ({
 
         {id === 3 && (
           <div className='w-full h-full'>
-            <div className='-top-4 -left-1 absolute flex w-full items-center flex-wrap gap-2'>
+            <div className='-top-2 left-4 absolute flex w-full items-center flex-wrap gap-2'>
               <span className='py-2 opacity-80 rounded-lg text-center bg-[#10132E] px-3 text-xs'>
                 Web Development
               </span>
@@ -139,12 +137,12 @@ export const BentoGridItem = ({
                 API Integration
               </span>
 
-              <span className='py-2 opacity-80 rounded-lg text-center bg-[#10132E] px-3 text-xs'>
+              <span className='py-2 opacity-80 rounded-lg text-center bg-[#10132E] px-3 text-xs hidden md:inline'>
                 UI/UX Design
               </span>
             </div>
 
-            <div className='bottom-1 -left-1 absolute flex w-full items-center flex-wrap gap-2'>
+            <div className='bottom-2 left-4 absolute flex w-full items-center flex-wrap gap-2'>
               <span className='py-2 opacity-80 rounded-lg text-center bg-[#10132E] px-3 text-xs'>
                 Responsive Web Design
               </span>
@@ -153,6 +151,9 @@ export const BentoGridItem = ({
               </span>
               <span className='py-2 opacity-80 rounded-lg text-center bg-[#10132E] px-3 text-xs'>
                 HTTP Requests
+              </span>
+              <span className='py-2 opacity-80 rounded-lg text-center bg-[#10132E] px-3 text-xs inline md:hidden'>
+                UI/UX Design
               </span>
             </div>
           </div>
@@ -163,8 +164,8 @@ export const BentoGridItem = ({
             <div className={`absolute bottom-[55px] w-full h-[200px]`}>
               <Lottie
                 options={{
-                  loop: copy,
-                  autoplay: copy,
+                  loop: false,
+                  autoplay: false,
                   animationData: confetti,
                   rendererSettings: {
                     preserveAspectRatio: 'xMidYMid slice',
@@ -179,6 +180,7 @@ export const BentoGridItem = ({
                 icon={<MdMarkEmailRead />}
                 position='right'
                 onClick={handleCopy}
+                otherClasses={copy && 'disabled opacity-70'}
               />
             )}
             {!copy && (
