@@ -1,6 +1,6 @@
 # New Portfolio
 
-[!Preview Image](/public/Next-Portfolio.png)
+![Preview Image](/public/Next-Portfolio.png)
 
 ## Project Description
 
