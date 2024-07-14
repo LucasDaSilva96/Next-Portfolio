@@ -21,4 +21,4 @@ Once the development server is running, you can access the New Portfolio applica
 
 ## Contact
 
-If you have any questions or inquiries, feel free to reach out to us at [dasilvajunior881@gmail.com](dasilvajunior881@gmail.com).
+If you have any questions or inquiries, feel free to reach out to me at [dasilvajunior881@gmail.com](dasilvajunior881@gmail.com).
