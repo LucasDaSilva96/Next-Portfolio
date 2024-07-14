@@ -5,6 +5,7 @@ import { FloatingNav } from '@/components/ui/floating-navbar';
 import { FaHome, FaLaptopCode } from 'react-icons/fa';
 import { GiSkills } from 'react-icons/gi';
 import { MdConnectWithoutContact } from 'react-icons/md';
+import TechSkills from '@/components/TechSkills';
 const navItems = [
   { name: 'About', link: '#about', icon: <FaHome /> },
   { name: 'Projects', link: '#projects', icon: <FaLaptopCode /> },
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <Grid />
         <Projects />
+        <TechSkills />
       </div>
     </main>
   );

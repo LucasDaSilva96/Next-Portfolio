@@ -103,36 +103,90 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
+export const techStack = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
+      'Next.js enables seamless server-side rendering and static site generation, making it a powerful choice for building performant web applications.',
+    name: 'Next.js',
+    title: 'Framework for Server-rendered React Applications',
+    image: '/Tech_logo_NextJS.png',
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
+      "React's component-based architecture and virtual DOM make it a highly efficient and flexible library for building dynamic user interfaces.",
+    name: 'React',
+    title: 'JavaScript Library for Building User Interfaces',
+    image: '/Tech_logo_react.png',
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
+      "TypeScript's strong typing and error-checking capabilities significantly improve code quality and developer productivity.",
+    name: 'TypeScript',
+    title: 'Superset of JavaScript with Type Safety',
+    image: '/Tech_logo_typeScript.png',
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
+      'Node.js allows for scalable and high-performance server-side applications using JavaScript, enabling full-stack development with a single language.',
+    name: 'Node.js',
+    title: "JavaScript Runtime Built on Chrome's V8 Engine",
+    image: '/Tech_logo_nodejs.png',
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: 'Michael Johnson',
-    title: 'Director of AlphaStream Technologies',
+      "Git's version control capabilities are essential for collaboration and maintaining a clear history of code changes.",
+    name: 'Git',
+    title: 'Distributed Version Control System',
+    image: '/Tech_logo_git.png',
+  },
+  {
+    quote:
+      'APIs enable seamless communication between different software systems, making them crucial for modern web development.',
+    name: 'APIs',
+    title: 'Application Programming Interfaces',
+    image: '/Tech_logo_api.png',
+  },
+  {
+    quote:
+      'CSS provides the essential styling capabilities needed to create visually appealing and responsive web pages.',
+    name: 'CSS',
+    title: 'Cascading Style Sheets',
+    image: '/Tech_logo_css.png',
+  },
+  {
+    quote:
+      'Tailwind CSS offers a utility-first approach, allowing developers to rapidly build custom designs without leaving their HTML.',
+    name: 'Tailwind',
+    title: 'Utility-First CSS Framework',
+    image: '/Tech_logo_tailwind.png',
+  },
+  {
+    quote:
+      "Material-UI brings Google's Material Design to React, providing a robust set of components that enhance UI consistency and usability.",
+    name: 'Material-UI',
+    title: 'React Components for Faster and Easier Web Development',
+    image: '/Tech_logo_material_ui.png',
+  },
+  {
+    quote:
+      'Framer Motion provides powerful animations and gestures, enabling the creation of rich and interactive user experiences.',
+    name: 'Framer Motion',
+    title: 'Open Source React Library to Power Production-ready Animations',
+    image: '/Tech_logo_motion_framer.png',
+  },
+  {
+    quote:
+      "Figma's collaborative design features make it an essential tool for creating and sharing design prototypes and assets.",
+    name: 'Figma',
+    title: 'Web-based UI Design Tool',
+    image: '/Tech_logo_figma.png',
+  },
+  {
+    quote:
+      'Bootstrap offers a wide range of pre-styled components, facilitating quick and responsive web development.',
+    name: 'Bootstrap',
+    title: 'Popular Framework for Building Responsive, Mobile-first Sites',
+    image: '/Tech_logo_bootStrap.png',
   },
 ];
 

@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef, useState } from 'react';
+import React, { use, useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { twMerge } from 'tailwind-merge';
 import { ThreeDCard } from '../ThreeDCardContainer';
@@ -21,19 +21,6 @@ type ProjectsProps = {
 export const Cards = ({ projects }: ProjectsProps) => {
   const containerRef = useRef(null);
 
-  const generateRandomTopAndLeft = (index: number) => {
-    const top = `${Math.floor(Math.random() * index)}%`;
-    const left = `${Math.floor(Math.random() * index)}%`;
-
-    return { top, left };
-  };
-
-  const generateRandomRotate = () => {
-    const rotate = `${Math.floor(Math.random() * 20) - 10}deg`;
-
-    return rotate;
-  };
-
   return (
     <div className='absolute inset-0 z-10' ref={containerRef}>
       {projects.map((project, index) => (
@@ -41,8 +28,8 @@ export const Cards = ({ projects }: ProjectsProps) => {
           containerRef={containerRef}
           alt={project.title}
           src={project.img}
-          rotate={generateRandomRotate()}
-          {...generateRandomTopAndLeft(index)}
+          top={index}
+          left={index}
           className='w-36 md:w-56'
           key={project.id}
           project={project}
@@ -56,23 +43,13 @@ type CardProps = {
   containerRef: React.RefObject<HTMLDivElement>;
   src: string;
   alt: string;
-  top: string;
-  left: string;
-  rotate: string;
+  top: number;
+  left: number;
   className: string;
   project: Project;
 };
 
-const Card = ({
-  containerRef,
-  src,
-  alt,
-  top,
-  left,
-  rotate,
-  className,
-  project,
-}: CardProps) => {
+const Card = ({ containerRef, top, left, className, project }: CardProps) => {
   const [zIndex, setZIndex] = useState(0);
 
   const updateZIndex = () => {
@@ -97,9 +74,9 @@ const Card = ({
     <motion.div
       onMouseDown={updateZIndex}
       style={{
-        top,
-        left,
-        rotate,
+        top: `${top * 10}%`,
+        left: `${left * 10}%`,
+        rotate: `${top}deg`,
         zIndex,
       }}
       className={twMerge('drag-elements absolute', className)}

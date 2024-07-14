@@ -11,7 +11,7 @@ export default function Projects() {
       <p className='text-center py-4 font-extralight italic text-sm'>
         Psst, The cards are <span className='text-purple'>draggable</span>
       </p>
-      <div className='relative  min-h-screen w-full overflow-hidden mt-2'>
+      <div className='relative  min-h-[90vh] w-full overflow-hidden mt-2'>
         <Cards projects={projects} />
       </div>
     </section>
