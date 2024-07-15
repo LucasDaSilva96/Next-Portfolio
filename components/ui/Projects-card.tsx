@@ -1,5 +1,5 @@
 'use client';
-import React, { use, useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { twMerge } from 'tailwind-merge';
 import { ThreeDCard } from '../ThreeDCardContainer';
@@ -28,11 +28,12 @@ export const Cards = ({ projects }: ProjectsProps) => {
           containerRef={containerRef}
           alt={project.title}
           src={project.img}
-          top={index}
+          top={10}
           left={index}
           className='w-36 md:w-56'
-          key={project.id}
+          key={project.id + `-${index}`}
           project={project}
+          index={index}
         />
       ))}
     </div>
@@ -47,9 +48,13 @@ type CardProps = {
   left: number;
   className: string;
   project: Project;
+  index: number;
 };
 
-const Card = ({ containerRef, top, left, className, project }: CardProps) => {
+const Card = ({ containerRef, top, className, project, index }: CardProps) => {
+  const LEFT = (index + 1) * 10;
+
+  // rest of the code remains the same
   const [zIndex, setZIndex] = useState(0);
 
   const updateZIndex = () => {
@@ -74,9 +79,9 @@ const Card = ({ containerRef, top, left, className, project }: CardProps) => {
     <motion.div
       onMouseDown={updateZIndex}
       style={{
-        top: `${top * 10}%`,
-        left: `${left * 10}%`,
-        rotate: `${top}deg`,
+        top: `${top}%`,
+        left: `${LEFT}%`,
+        rotate: `${index}deg`,
         zIndex,
       }}
       className={twMerge('drag-elements absolute', className)}
