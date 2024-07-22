@@ -101,6 +101,15 @@ export const projects = [
     code: '#',
     demo: '#',
   },
+  {
+    id: 5,
+    title: 'Netflix Clone',
+    des: 'This is a Full Stack Netflix Clone built using React, Tailwind CSS, Next.js, Prisma, MongoDB, NextAuth, and deployed on Vercel. The project aims to mimic the core features of Netflix, including user authentication, movie browsing, and movie details display',
+    img: '/NextFlix-2.png',
+    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/three.svg', '/gsap.svg'],
+    code: 'https://github.com/LucasDaSilva96/NextFlix',
+    demo: 'https://next-flix-peach.vercel.app/',
+  },
 ];
 
 export const techStack = [
