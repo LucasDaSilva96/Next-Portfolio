@@ -98,8 +98,8 @@ export const projects = [
     des: 'Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..',
     img: '/p4.svg',
     iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/three.svg', '/gsap.svg'],
-    code: '#',
-    demo: '#',
+    code: 'https://github.com/LucasDaSilva96/Apple-Website?tab=readme-ov-file',
+    demo: 'https://apple-website-ruddy-gamma.vercel.app/',
   },
   {
     id: 5,
