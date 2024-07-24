@@ -14,9 +14,7 @@ export default function Projects() {
       <p className='text-center py-4 font-extralight italic text-sm hidden lg:inline'>
         Psst, The cards are <span className='text-purple'>draggable</span>
       </p>
-      <span className='text-center text-xs text-red-500  '>
-        This section is still in progress
-      </span>
+
       <div className='relative  min-h-[90vh] w-full overflow-hidden mt-2 hidden lg:block'>
         <Cards projects={projects} />
       </div>
