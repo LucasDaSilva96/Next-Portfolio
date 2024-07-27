@@ -90,6 +90,15 @@ export const projects = [
     code: 'https://github.com/LucasDaSilva96/NextFlix',
     demo: 'https://next-flix-peach.vercel.app/',
   },
+  {
+    id: 3,
+    title: 'NextHorizon Bank',
+    des: 'This modern web application is designed to make banking operations easier and more secure for users. Built using Next.js, React, TypeScript, and Tailwind CSS, it offers features like secure account linking, seamless fund transfers, real-time notifications, and detailed transaction histories.',
+    img: '/NextHorizon.png',
+    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/vercel.svg'],
+    code: 'https://github.com/LucasDaSilva96/NextHorizon-Finance',
+    demo: 'https://next-horizon-finance.vercel.app/',
+  },
 ];
 
 export const techStack = [
