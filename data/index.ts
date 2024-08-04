@@ -99,6 +99,22 @@ export const projects = [
     code: 'https://github.com/LucasDaSilva96/NextHorizon-Finance',
     demo: 'https://next-horizon-finance.vercel.app/',
   },
+  {
+    id: 4,
+    title: 'A Next.js Meta Threads Application',
+    des: "Welcome to the Next.js Meta Threads Application! This app is designed to manage and display threads in a vibrant community setting. Built with Next.js, it leverages the framework's powerful features such as server-side rendering and dynamic routing to provide a seamless and efficient user experience.",
+    img: '/Threads-2.png',
+    iconLists: [
+      '/next.svg',
+      '/tail.svg',
+      '/ts.svg',
+      '/vercel.svg',
+      '/clerk.svg',
+      '/mongodb.svg',
+    ],
+    code: 'https://github.com/LucasDaSilva96/Next-Threads-App',
+    demo: 'https://next-threads-app-sigma.vercel.app/sign-in',
+  },
 ];
 
 export const techStack = [
