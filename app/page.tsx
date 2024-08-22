@@ -8,6 +8,7 @@ import Experience from '@/components/Experience';
 import Approach from '@/components/Approach';
 import Footer from '@/components/Footer';
 import { TextRevealCardPreview } from '@/components/TextRevealCard';
+import AnimatedListComponent from '@/components/AnimatedList';
 const navItems = [
   { name: 'About', link: '#about' },
   { name: 'Projects', link: '#projects' },
@@ -24,6 +25,7 @@ export default function Home() {
     <main className='relative overflow-clip bg-black-100 flex justify-center items-center flex-col  mx-auto sm:px-10 px-5'>
       <div className='max-w-7xl w-full'>
         <FloatingNav navItems={navItems} />
+        <AnimatedListComponent />
         <Hero />
         <Grid />
         <Projects />
