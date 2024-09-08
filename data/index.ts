@@ -101,19 +101,12 @@ export const projects = [
   },
   {
     id: 4,
-    title: 'A Next.js Meta Threads Application',
-    des: "Welcome to the Next.js Meta Threads Application! This app is designed to manage and display threads in a vibrant community setting. Built with Next.js, it leverages the framework's powerful features such as server-side rendering and dynamic routing to provide a seamless and efficient user experience.",
-    img: '/Threads-2.png',
-    iconLists: [
-      '/next.svg',
-      '/tail.svg',
-      '/ts.svg',
-      '/vercel.svg',
-      '/clerk.svg',
-      '/mongodb.svg',
-    ],
-    code: 'https://github.com/LucasDaSilva96/Next-Threads-App',
-    demo: 'https://next-threads-app-sigma.vercel.app/sign-in',
+    title: 'SpeakEasy',
+    des: 'With SpeakEasy, people from different parts of the world can chat seamlessly in their native languages, and the app automatically translates messages for effortless, real-time communication across cultures.',
+    img: '/SpeakEasy.png',
+    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/vercel.svg', '/git.svg'],
+    code: 'https://github.com/LucasDaSilva96',
+    demo: 'https://speak-easy-five.vercel.app/',
   },
 ];
 
