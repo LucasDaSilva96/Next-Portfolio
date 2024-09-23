@@ -26,6 +26,8 @@ const slugs = [
   'supabase',
   'tailwindcss',
   'bootstrap',
+  'vue',
+  'nuxt',
 ];
 
 export default function TachSkills() {

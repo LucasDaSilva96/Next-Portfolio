@@ -91,6 +91,15 @@ export const projects = [
     demo: 'https://next-flix-peach.vercel.app/',
   },
   {
+    id: 4,
+    title: 'Space Tourism Website',
+    des: 'This project is my solution to the Space Tourism Website challenge from Frontend Mentor. The website is built with modern front-end technologies, including Vue 3, Tailwind CSS, GSAP, and TypeScript, to create a dynamic and responsive multi-page site',
+    img: '/Space-tourism.png',
+    iconLists: ['/vue.svg', '/tail.svg', '/ts.svg', '/gsap.svg', '/git.svg'],
+    code: 'https://github.com/LucasDaSilva96/FrontEnd-Mentor---Projects/tree/main/Space-tourism-multi-page-website',
+    demo: 'https://space-tourism-x.netlify.app/',
+  },
+  {
     id: 3,
     title: 'NextHorizon Bank',
     des: 'This modern web application is designed to make banking operations easier and more secure for users. Built using Next.js, React, TypeScript, and Tailwind CSS, it offers features like secure account linking, seamless fund transfers, real-time notifications, and detailed transaction histories.',
@@ -98,15 +107,6 @@ export const projects = [
     iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/vercel.svg'],
     code: 'https://github.com/LucasDaSilva96/NextHorizon-Finance',
     demo: 'https://next-horizon-finance.vercel.app/',
-  },
-  {
-    id: 4,
-    title: 'SpeakEasy',
-    des: 'With SpeakEasy, people from different parts of the world can chat seamlessly in their native languages, and the app automatically translates messages for effortless, real-time communication across cultures.',
-    img: '/SpeakEasy.png',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/vercel.svg', '/git.svg'],
-    code: 'https://github.com/LucasDaSilva96',
-    demo: 'https://speak-easy-five.vercel.app/',
   },
 ];
 
