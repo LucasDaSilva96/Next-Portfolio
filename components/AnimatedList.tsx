@@ -109,7 +109,7 @@ export default function AnimatedListComponent({
         className
       )}
     >
-      <AnimatedList className='blur'>
+      <AnimatedList>
         {personalNotifications.map((item, idx) => (
           <Notification {...item} key={idx} />
         ))}
