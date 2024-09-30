@@ -8,7 +8,7 @@ import Experience from '@/components/Experience';
 import Approach from '@/components/Approach';
 import Footer from '@/components/Footer';
 import { TextRevealCardPreview } from '@/components/TextRevealCard';
-import AnimatedListComponent from '@/components/AnimatedList';
+// import AnimatedListComponent from '@/components/AnimatedList';
 const navItems = [
   { name: 'About', link: '#about' },
   { name: 'Projects', link: '#projects' },
