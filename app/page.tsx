@@ -25,7 +25,7 @@ export default function Home() {
     <main className='relative overflow-clip bg-black-100 flex justify-center items-center flex-col  mx-auto sm:px-10 px-5'>
       <div className='max-w-7xl w-full'>
         <FloatingNav navItems={navItems} />
-        <AnimatedListComponent />
+        {/* <AnimatedListComponent /> */}
         <Hero />
         <Grid />
         <Projects />
