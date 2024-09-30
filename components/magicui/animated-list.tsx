@@ -10,7 +10,7 @@ export interface AnimatedListProps {
 }
 
 export const AnimatedList = React.memo(
-  ({ className, children, delay = 4000 }: AnimatedListProps) => {
+  ({ className, children, delay = 3000 }: AnimatedListProps) => {
     const [index, setIndex] = useState(0);
     const [isAnimating, setIsAnimating] = useState(false);
     const childrenArray = React.Children.toArray(children);
@@ -65,7 +65,7 @@ export function AnimatedListItem({ children }: { children: React.ReactNode }) {
       {...animations}
       viewport={{ once: true }}
       layout
-      className='mx-auto w-full'
+      className='mx-auto w-full backdrop-blur-md'
     >
       {children}
     </motion.div>
