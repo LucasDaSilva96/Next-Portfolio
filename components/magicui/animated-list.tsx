@@ -65,7 +65,7 @@ export function AnimatedListItem({ children }: { children: React.ReactNode }) {
       {...animations}
       viewport={{ once: true }}
       layout
-      className='mx-auto w-full backdrop-blur-md'
+      className='mx-auto w-full'
     >
       {children}
     </motion.div>
