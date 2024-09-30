@@ -60,7 +60,7 @@ const personalNotifications = [
 
 const Notification = ({ name, description, icon, color, time }: Item) => {
   return (
-    <div className='backdrop-blur-xl'>
+    <div className='blur'>
       <figure
         className={cn(
           `relative mx-auto min-h-fit w-full max-w-[450px] overflow-hidden rounded-2xl p-4`,
@@ -105,11 +105,11 @@ export default function AnimatedListComponent({
   return (
     <div
       className={cn(
-        'fixed right-0 top-0 z-50 flex h-60 w-full max-w-[470px] flex-col p-6 overflow-hidden bg-transparent md:shadow-xl',
+        'fixed right-0 top-0 z-50 flex h-60 w-full max-w-[470px] flex-col p-6 overflow-hidden bg-transparent md:shadow-xl blur',
         className
       )}
     >
-      <AnimatedList>
+      <AnimatedList className='blur'>
         {personalNotifications.map((item, idx) => (
           <Notification {...item} key={idx} />
         ))}
