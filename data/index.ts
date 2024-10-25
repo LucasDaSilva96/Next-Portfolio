@@ -108,6 +108,31 @@ export const projects = [
     code: 'https://github.com/LucasDaSilva96/NextHorizon-Finance',
     demo: 'https://next-horizon-finance.vercel.app/',
   },
+  {
+    id: 4,
+    title: 'Pomodoro app',
+    des: 'This is my solution to the Pomodoro app challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.',
+    img: '/Pomodoro.png',
+    iconLists: [
+      '/nuxt.svg',
+      '/tail.svg',
+      '/ts.svg',
+      '/vercel.svg',
+      '/git.svg',
+      '/figma.svg',
+    ],
+    code: 'https://github.com/LucasDaSilva96/FrontEnd-Mentor---Projects/tree/main/Pomodoro-App',
+    demo: 'https://main--pomodoro-just-dot-it.netlify.app/',
+  },
+  {
+    id: 5,
+    title: 'Interval App',
+    des: 'The Interval App is a React-based application designed to help users manage their time effectively through various timers and interval settings. The app leverages modern web technologies such as TypeScript, Zustand for state management, and Framer Motion for animations.',
+    img: '/Interval-app.png',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/vercel.svg', '/git.svg'],
+    code: 'https://github.com/LucasDaSilva96/Interval-App---for-all-you-timing-needs',
+    demo: 'https://interval-app-for-all-you-timing-needs.vercel.app/',
+  },
 ];
 
 export const techStack = [
@@ -200,8 +225,8 @@ export const techStack = [
 export const workExperience = [
   {
     id: 1,
-    title: 'Personal Portfolio Website',
-    desc: 'Designed and developed a personal portfolio website using React.js, Next.js, and Tailwind CSS to showcase my projects and skills.',
+    title: 'Intern Frontend Developer - Mennt AS',
+    desc: 'Currently Working as an intern frontend developer at Mennt AS, contributing to the development of e-commerce websites using Vue.js, Nuxt.js, Directus and Tailwind CSS.',
     className: 'md:col-span-2',
     thumbnail: '/exp1.svg',
   },
