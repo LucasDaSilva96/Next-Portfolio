@@ -119,7 +119,7 @@ export const projects = [
       '/ts.svg',
       '/vercel.svg',
       '/git.svg',
-      '/figma.svg',
+      '/fm.svg',
     ],
     code: 'https://github.com/LucasDaSilva96/FrontEnd-Mentor---Projects/tree/main/Pomodoro-App',
     demo: 'https://main--pomodoro-just-dot-it.netlify.app/',
