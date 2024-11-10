@@ -133,6 +133,15 @@ export const projects = [
     code: 'https://github.com/LucasDaSilva96/Interval-App---for-all-you-timing-needs',
     demo: 'https://interval-app-for-all-you-timing-needs.vercel.app/',
   },
+  {
+    id: 6,
+    title: 'BortaKväll',
+    des: 'BortaKväll is an innovative e-commerce platform dedicated to revolutionizing the candy shopping experience. Our mission is to provide candy lovers with a delightful and seamless online shopping journey, offering a wide variety of sweets and an intuitive user interface. Built with cutting-edge technologies, BortaKväll ensures a secure, fast, and enjoyable shopping experience for all users.',
+    img: '/Bortkvall.png',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/vercel.svg', '/git.svg'],
+    code: 'https://github.com/LucasDaSilva96/BortaKv-ll',
+    demo: 'https://borta-kv-ll.vercel.app/',
+  },
 ];
 
 export const techStack = [
